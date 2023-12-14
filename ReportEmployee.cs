@@ -21,5 +21,10 @@ namespace ProyectoFinalP3
         {
             dg_Employees.DataSource = Employee.ReportEmployee();
         }
+
+        private void dg_Employees_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

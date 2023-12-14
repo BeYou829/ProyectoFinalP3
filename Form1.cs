@@ -24,5 +24,11 @@ namespace ProyectoFinalP3
             AddEmployee addEmployeeForm = new AddEmployee();
             addEmployeeForm.Visible = true;
         }
+
+        private void UpdateEmployee_Click(object sender, EventArgs e)
+        {
+            UpdateEmployee updateEmployeeForm = new UpdateEmployee();
+            updateEmployeeForm.Visible = true;
+        }
     }
 }

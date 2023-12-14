@@ -49,6 +49,7 @@
             dg_Employees.Name = "dg_Employees";
             dg_Employees.Size = new Size(879, 393);
             dg_Employees.TabIndex = 1;
+            dg_Employees.CellContentClick += dg_Employees_CellContentClick;
             // 
             // ReportEmployee
             // 

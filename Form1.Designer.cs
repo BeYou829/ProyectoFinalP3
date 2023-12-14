@@ -48,7 +48,7 @@
             // 
             AddEmployee.Location = new Point(76, 110);
             AddEmployee.Name = "AddEmployee";
-            AddEmployee.Size = new Size(75, 23);
+            AddEmployee.Size = new Size(105, 45);
             AddEmployee.TabIndex = 2;
             AddEmployee.Text = "Create";
             AddEmployee.UseVisualStyleBackColor = true;
@@ -58,7 +58,7 @@
             // 
             ReportEmployee.Location = new Point(76, 161);
             ReportEmployee.Name = "ReportEmployee";
-            ReportEmployee.Size = new Size(75, 23);
+            ReportEmployee.Size = new Size(105, 52);
             ReportEmployee.TabIndex = 3;
             ReportEmployee.Text = "Report";
             ReportEmployee.UseVisualStyleBackColor = true;
@@ -68,16 +68,17 @@
             // 
             UpdateEmployee.Location = new Point(76, 219);
             UpdateEmployee.Name = "UpdateEmployee";
-            UpdateEmployee.Size = new Size(75, 23);
+            UpdateEmployee.Size = new Size(105, 54);
             UpdateEmployee.TabIndex = 4;
             UpdateEmployee.Text = "Update";
             UpdateEmployee.UseVisualStyleBackColor = true;
+            UpdateEmployee.Click += UpdateEmployee_Click;
             // 
             // DeleteEmployee
             // 
             DeleteEmployee.Location = new Point(76, 279);
             DeleteEmployee.Name = "DeleteEmployee";
-            DeleteEmployee.Size = new Size(75, 23);
+            DeleteEmployee.Size = new Size(105, 47);
             DeleteEmployee.TabIndex = 5;
             DeleteEmployee.Text = "Delete";
             DeleteEmployee.UseVisualStyleBackColor = true;
