@@ -28,12 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "DeleteEmployee";
+            dg_Employees = new DataGridView();
+            Deletebtn = new Button();
+            ((System.ComponentModel.ISupportInitialize)dg_Employees).BeginInit();
+            SuspendLayout();
+            // 
+            // dg_Employees
+            // 
+            dg_Employees.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dg_Employees.Location = new Point(12, 55);
+            dg_Employees.Name = "dg_Employees";
+            dg_Employees.Size = new Size(481, 383);
+            dg_Employees.TabIndex = 0;
+            dg_Employees.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // Deletebtn
+            // 
+            Deletebtn.Location = new Point(598, 177);
+            Deletebtn.Name = "Deletebtn";
+            Deletebtn.Size = new Size(75, 23);
+            Deletebtn.TabIndex = 1;
+            Deletebtn.Text = "Delete";
+            Deletebtn.UseVisualStyleBackColor = true;
+            Deletebtn.Click += Deletebtn_Click;
+            // 
+            // DeleteEmployee
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(Deletebtn);
+            Controls.Add(dg_Employees);
+            Name = "DeleteEmployee";
+            Text = "DeleteEmployee";
+            Load += DeleteEmployee_Load;
+            ((System.ComponentModel.ISupportInitialize)dg_Employees).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView dg_Employees;
+        private Button Deletebtn;
     }
 }

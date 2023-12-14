@@ -30,5 +30,23 @@ namespace ProyectoFinalP3
             UpdateEmployee updateEmployeeForm = new UpdateEmployee();
             updateEmployeeForm.Visible = true;
         }
+
+        private void DeleteEmployee_Click(object sender, EventArgs e)
+        {
+            DeleteEmployee deleteEmployeeForm = new DeleteEmployee();
+            deleteEmployeeForm.Visible = true;
+        }
+
+        private void Maintitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void modoOscuroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Mainform modoForm = new Mainform();
+            modoForm.BackColor = Color.Black;
+            
+        }
     }
 }

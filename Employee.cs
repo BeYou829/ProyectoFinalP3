@@ -128,6 +128,33 @@ namespace ProyectoFinalP3
             return pass;
         }
 
+        public static bool DeleteEmployee(string ID)
+        {
+            bool pass = false;
+
+            DataTable dt_employeeslist = new DataTable();
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand command = new SqlCommand("DELETE FROM employee WHERE Id = @ID", connection);
+            command.Parameters.AddWithValue("@ID", ID);
+            
+            try
+            {
+                connection.Open();
+                command.ExecuteNonQuery();
+                pass = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return pass;
+        }
+
         //    public static bool UpdateEmploye(
         //        string id, string fname, string lname, string sex, string docid,
         //        string dob, string email, string phonenumber, string altphonenumber,
