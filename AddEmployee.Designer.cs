@@ -62,60 +62,67 @@
             // titleadd
             // 
             titleadd.AutoSize = true;
-            titleadd.Location = new Point(335, 23);
+            titleadd.Font = new Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            titleadd.Location = new Point(252, 9);
             titleadd.Name = "titleadd";
-            titleadd.Size = new Size(110, 15);
+            titleadd.Size = new Size(283, 36);
             titleadd.TabIndex = 0;
             titleadd.Text = "Adding a Employee";
             // 
             // fname
             // 
             fname.AutoSize = true;
+            fname.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             fname.Location = new Point(44, 80);
             fname.Name = "fname";
-            fname.Size = new Size(64, 15);
+            fname.Size = new Size(67, 15);
             fname.TabIndex = 1;
             fname.Text = "First Name";
             // 
             // lname
             // 
             lname.AutoSize = true;
+            lname.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lname.Location = new Point(44, 121);
             lname.Name = "lname";
-            lname.Size = new Size(63, 15);
+            lname.Size = new Size(65, 15);
             lname.TabIndex = 2;
             lname.Text = "Last Name";
             // 
             // sex
             // 
             sex.AutoSize = true;
+            sex.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             sex.Location = new Point(44, 160);
             sex.Name = "sex";
-            sex.Size = new Size(25, 15);
+            sex.Size = new Size(28, 15);
             sex.TabIndex = 3;
             sex.Text = "Sex";
             // 
             // docid
             // 
             docid.AutoSize = true;
+            docid.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             docid.Location = new Point(252, 80);
             docid.Name = "docid";
-            docid.Size = new Size(77, 15);
+            docid.Size = new Size(82, 15);
             docid.TabIndex = 4;
             docid.Text = "Document ID";
             // 
             // dob
             // 
             dob.AutoSize = true;
+            dob.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             dob.Location = new Point(252, 121);
             dob.Name = "dob";
-            dob.Size = new Size(31, 15);
+            dob.Size = new Size(33, 15);
             dob.TabIndex = 5;
             dob.Text = "DOB";
             // 
             // email
             // 
             email.AutoSize = true;
+            email.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             email.Location = new Point(252, 160);
             email.Name = "email";
             email.Size = new Size(41, 15);
@@ -125,63 +132,70 @@
             // phonenumber
             // 
             phonenumber.AutoSize = true;
+            phonenumber.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             phonenumber.Location = new Point(471, 80);
             phonenumber.Name = "phonenumber";
-            phonenumber.Size = new Size(88, 15);
+            phonenumber.Size = new Size(91, 15);
             phonenumber.TabIndex = 7;
             phonenumber.Text = "Phone Number";
             // 
             // altphonenumber
             // 
             altphonenumber.AutoSize = true;
+            altphonenumber.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             altphonenumber.Location = new Point(471, 121);
             altphonenumber.Name = "altphonenumber";
-            altphonenumber.Size = new Size(109, 15);
+            altphonenumber.Size = new Size(113, 15);
             altphonenumber.TabIndex = 8;
             altphonenumber.Text = "Alt. Phone Number";
             // 
             // direccion
             // 
             direccion.AutoSize = true;
+            direccion.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             direccion.Location = new Point(44, 214);
             direccion.Name = "direccion";
-            direccion.Size = new Size(57, 15);
+            direccion.Size = new Size(60, 15);
             direccion.TabIndex = 9;
             direccion.Text = "Direccion";
             // 
             // ciudad
             // 
             ciudad.AutoSize = true;
+            ciudad.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             ciudad.Location = new Point(44, 249);
             ciudad.Name = "ciudad";
-            ciudad.Size = new Size(45, 15);
+            ciudad.Size = new Size(44, 15);
             ciudad.TabIndex = 10;
             ciudad.Text = "Ciudad";
             // 
             // provincia
             // 
             provincia.AutoSize = true;
+            provincia.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             provincia.Location = new Point(252, 249);
             provincia.Name = "provincia";
-            provincia.Size = new Size(56, 15);
+            provincia.Size = new Size(58, 15);
             provincia.TabIndex = 11;
             provincia.Text = "Provincia";
             // 
             // rol
             // 
             rol.AutoSize = true;
+            rol.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             rol.Location = new Point(44, 311);
             rol.Name = "rol";
-            rol.Size = new Size(24, 15);
+            rol.Size = new Size(25, 15);
             rol.TabIndex = 12;
             rol.Text = "Rol";
             // 
             // departamento
             // 
             departamento.AutoSize = true;
+            departamento.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             departamento.Location = new Point(252, 311);
             departamento.Name = "departamento";
-            departamento.Size = new Size(83, 15);
+            departamento.Size = new Size(89, 15);
             departamento.TabIndex = 13;
             departamento.Text = "Departamento";
             // 
@@ -278,6 +292,7 @@
             // 
             // addEmployeebtn
             // 
+            addEmployeebtn.Font = new Font("Times New Roman", 9F, FontStyle.Bold);
             addEmployeebtn.Location = new Point(662, 311);
             addEmployeebtn.Name = "addEmployeebtn";
             addEmployeebtn.Size = new Size(75, 23);
@@ -288,6 +303,7 @@
             // 
             // clearbtn
             // 
+            clearbtn.Font = new Font("Times New Roman", 9F, FontStyle.Bold);
             clearbtn.Location = new Point(581, 311);
             clearbtn.Name = "clearbtn";
             clearbtn.Size = new Size(75, 23);

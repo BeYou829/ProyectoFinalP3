@@ -36,9 +36,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(379, 37);
+            label1.Font = new Font("Times New Roman", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(296, 31);
             label1.Name = "label1";
-            label1.Size = new Size(116, 15);
+            label1.Size = new Size(301, 36);
             label1.TabIndex = 0;
             label1.Text = "Report of Employees";
             // 

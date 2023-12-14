@@ -102,5 +102,10 @@ namespace ProyectoFinalP3
             roltxtb.ResetText();
             depttxtb.ResetText();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

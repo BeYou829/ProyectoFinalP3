@@ -37,6 +37,8 @@
             menuStrip1 = new MenuStrip();
             inicioToolStripMenuItem = new ToolStripMenuItem();
             modoOscuroToolStripMenuItem = new ToolStripMenuItem();
+            herramientasToolStripMenuItem = new ToolStripMenuItem();
+            acercaDeToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -108,7 +110,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { inicioToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { inicioToolStripMenuItem, herramientasToolStripMenuItem, acercaDeToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1067, 24);
@@ -128,6 +130,18 @@
             modoOscuroToolStripMenuItem.Size = new Size(180, 22);
             modoOscuroToolStripMenuItem.Text = "Modo Oscuro";
             modoOscuroToolStripMenuItem.Click += modoOscuroToolStripMenuItem_Click;
+            // 
+            // herramientasToolStripMenuItem
+            // 
+            herramientasToolStripMenuItem.Name = "herramientasToolStripMenuItem";
+            herramientasToolStripMenuItem.Size = new Size(90, 20);
+            herramientasToolStripMenuItem.Text = "Herramientas";
+            // 
+            // acercaDeToolStripMenuItem
+            // 
+            acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+            acercaDeToolStripMenuItem.Size = new Size(72, 20);
+            acercaDeToolStripMenuItem.Text = "Acerca De";
             // 
             // Mainform
             // 
@@ -163,5 +177,7 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem inicioToolStripMenuItem;
         private ToolStripMenuItem modoOscuroToolStripMenuItem;
+        private ToolStripMenuItem herramientasToolStripMenuItem;
+        private ToolStripMenuItem acercaDeToolStripMenuItem;
     }
 }
