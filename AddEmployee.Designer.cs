@@ -224,7 +224,7 @@
             // 
             emailtxtb.Location = new Point(335, 157);
             emailtxtb.Name = "emailtxtb";
-            emailtxtb.Size = new Size(100, 23);
+            emailtxtb.Size = new Size(164, 23);
             emailtxtb.TabIndex = 19;
             // 
             // phtxtb

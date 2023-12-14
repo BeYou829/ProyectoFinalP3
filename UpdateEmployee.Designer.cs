@@ -79,6 +79,7 @@
             clearbtn.TabIndex = 56;
             clearbtn.Text = "Clear";
             clearbtn.UseVisualStyleBackColor = true;
+            clearbtn.Click += clearbtn_Click;
             // 
             // updateEmployeebtn
             // 
@@ -246,7 +247,7 @@
             // 
             emailtxtb.Location = new Point(284, 196);
             emailtxtb.Name = "emailtxtb";
-            emailtxtb.Size = new Size(100, 23);
+            emailtxtb.Size = new Size(194, 23);
             emailtxtb.TabIndex = 47;
             // 
             // phtxtb
@@ -305,7 +306,7 @@
             dg_Employees.Name = "dg_Employees";
             dg_Employees.Size = new Size(412, 279);
             dg_Employees.TabIndex = 57;
-            dg_Employees.CellContentClick += dataGridView1_CellContentClick;
+            dg_Employees.CellContentClick += dg_Employees_CellContentClick;
             // 
             // getInfo
             // 

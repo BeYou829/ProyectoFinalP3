@@ -17,25 +17,14 @@ namespace ProyectoFinalP3
             InitializeComponent();
         }
 
-        private void updateEmployeebtn_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
+        string UID = "";
         private void UpdateEmployee_Load(object sender, EventArgs e)
         {
             dg_Employees.DataSource = Employee.ReportEmployee();
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void getInfo_Click(object sender, EventArgs e)
         {
-            string ID = dg_Employees.CurrentRow.Cells["ID"].Value.ToString()??"";
+            string ID = dg_Employees.CurrentRow.Cells["ID"].Value.ToString() ?? "";
             string fname = dg_Employees.CurrentRow.Cells["fname"].Value.ToString() ?? "";
             string lname = dg_Employees.CurrentRow.Cells["lname"].Value.ToString() ?? "";
             string sex = dg_Employees.CurrentRow.Cells["sex"].Value.ToString() ?? "";
@@ -45,7 +34,7 @@ namespace ProyectoFinalP3
             string phonenumber = dg_Employees.CurrentRow.Cells["phonenumber"].Value.ToString() ?? "";
             string altphonenumber = dg_Employees.CurrentRow.Cells["altphonenumber"].Value.ToString() ?? "";
             string direccion = dg_Employees.CurrentRow.Cells["direccion"].Value.ToString() ?? "";
-            string ciudad= dg_Employees.CurrentRow.Cells["ciudad"].Value.ToString() ?? "";
+            string ciudad = dg_Employees.CurrentRow.Cells["ciudad"].Value.ToString() ?? "";
             string provincia = dg_Employees.CurrentRow.Cells["provincia"].Value.ToString() ?? "";
             string rol = dg_Employees.CurrentRow.Cells["rol"].Value.ToString() ?? "";
             string departamento = dg_Employees.CurrentRow.Cells["departamento"].Value.ToString() ?? "";
@@ -58,12 +47,60 @@ namespace ProyectoFinalP3
             emailtxtb.Text = email;
             phtxtb.Text = phonenumber;
             aphtxtb.Text = altphonenumber;
-            fnametxtb.Text = fname;
-            fnametxtb.Text = fname;
-            fnametxtb.Text = fname;
-            fnametxtb.Text = fname;
-            fnametxtb.Text = fname;
-            fnametxtb.Text = fname;
+            direcciontxtb.Text = direccion;
+            ciudadtxtb.Text = ciudad;
+            provinciatxtb.Text = provincia;
+            roltxtb.Text = rol;
+            depttxtb.Text = departamento;
+            UID = ID;
+        }
+
+        private void dg_Employees_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void updateEmployeebtn_Click(object sender, EventArgs e)
+        {
+            if (Employee.UpdateEmployee(fnametxtb.Text, lnametxtb.Text, sextxtb.Text, docidtxtb.Text, dobtxtb.Text, emailtxtb.Text, phtxtb.Text, aphtxtb.Text, direcciontxtb.Text, ciudadtxtb.Text, provinciatxtb.Text, roltxtb.Text, depttxtb.Text, UID))
+            {
+                MessageBox.Show("Employee Updated");
+                dg_Employees.DataSource = Employee.ReportEmployee();
+                fnametxtb.ResetText();
+                lnametxtb.ResetText();
+                sextxtb.ResetText();
+                dobtxtb.ResetText();
+                docidtxtb.ResetText();
+                emailtxtb.ResetText();
+                phtxtb.ResetText();
+                aphtxtb.ResetText();
+                direcciontxtb.ResetText();
+                ciudadtxtb.ResetText();
+                provinciatxtb.ResetText();
+                roltxtb.ResetText();
+                depttxtb.ResetText();
+            }
+            else
+            {
+                MessageBox.Show("Something Went wrong");
+            }
+        }
+
+        private void clearbtn_Click(object sender, EventArgs e)
+        {
+            fnametxtb.ResetText();
+            lnametxtb.ResetText();
+            sextxtb.ResetText();
+            dobtxtb.ResetText();
+            docidtxtb.ResetText();
+            emailtxtb.ResetText();
+            phtxtb.ResetText();
+            aphtxtb.ResetText();
+            direcciontxtb.ResetText();
+            ciudadtxtb.ResetText();
+            provinciatxtb.ResetText();
+            roltxtb.ResetText();
+            depttxtb.ResetText();
         }
     }
 }
